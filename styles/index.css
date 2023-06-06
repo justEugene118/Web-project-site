@@ -10,6 +10,11 @@ body {
 h1 h2 h3 {
     color: #428bca;
 }
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+    margin-bottom: 0.25em;
+}
 
 #body {
     width: 90vw;
@@ -28,13 +33,22 @@ hr {
     margin-bottom: 3rem;
 }
 
+p {
+    line-height: 1.5;
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
 }
 
+a, a:hover, a:active, a:focus, a:visited {
+    color: #f0ad4e;
+    text-decoration: none;
+}
 
 
-#menu {
+
+.menu {
     position: fixed;
     top: 0rem;
     right: 0rem;
@@ -42,6 +56,16 @@ hr {
     height: 2.7rem;
     border-radius: 4px;
     z-index: 1000;
+}
+.menu .menu-open .menu-close {
+    width: 2.7rem;
+    height: 2.7rem;
+    position: absolute;
+    padding: 0.3rem 0.05rem;
+    background: rgba(17,17,17,0.9);
+    top: 0.3rem;
+    right: 0.3rem;
+    z-index: 1001;
 }
 
 
@@ -119,3 +143,109 @@ header {
 }
 
 
+
+.div-conteiner {
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.div-center {
+    text-align: center;
+}
+
+.div-column {
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+a.demo-button {
+    background-color: rgba(240,173,78,0.8);
+    color: #000;
+    font-weight: 400;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+a:visited {
+    text-decoration: none;
+}
+.demo-conteiner-border {
+    padding: 2em;
+    background: #000;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.demo-conteiner-border::before {
+    content: "";
+    background: linear-gradient(135deg, #428bca, #000, #000, #f0ad4e);
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    filter: blur(35px);
+    z-index: -2;
+}
+.demo-conteiner-border::after {
+    content: "";
+    background: linear-gradient(135deg, #428bca, #000, #000, #f0ad4e);
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: -1;
+}
+
+
+
+.div-conteiner-row {
+    padding: 2em;
+    background: #000;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.div-conteiner-row::before {
+    content: "";
+    background: linear-gradient(135deg, #428bca, #000, #000, #f0ad4e);
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: -2;
+    filter: blur(35px);
+}
+.div-conteiner-row::after {
+    content: "";
+    background: linear-gradient(135deg, #428bca, #000, #000, #f0ad4e);
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: -1;
+}
+.img-ss {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 1.5rem auto;
+}
+.img-ss img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #666;
+}

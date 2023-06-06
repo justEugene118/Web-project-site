@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneMenu - Система онлайн-меню та онлайн-замовлень</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- <script type="text/javascript" src="index.js"></script> -->
     <meta name="description" content="Система онлайн-меню, онлайн-замовлень та доставки для ресторанів, кафе, магазинів, фермерських господарств і т.п.">
 </head>
 <body>
-    <div id="menu">
-        <button onclick="menuButton()" class="dropbtn">Menu</button>
-        <div id="menu-content" class="menu-content">
-            <a href="demo.html">Демо</a>
-            <a href="#feature">Можливості системи</a>
-            <a href="#photo">Фото</a>
-            <a href="#clients">Клієнти</a>
-            <a href="#convinience">Зручність</a>
-            <a href="#pricing">Вартість</a>
-            <a href="#contacts">Контакти</a>
+    <div id="menu" class="menu">
+        <a class="menu-open" href="#menu">
+            <i class="fa fa-2x fa-fw fa-bars"></i>
+        </a>
+        <a class="menu-close" href="javascript:history.go(-1)">
+            <i class="fa fa-2x fa-fw fa-close"></i>
+        </a>
+        <div class="menu-content">
+            <div class="div-conteiner-row div-center">
+                <a href="demo.html" target="_blank">Демо</a>
+                <a href="#feature">Можливості системи</a>
+                <a href="#photo">Фото</a>
+                <a href="#clients">Клієнти</a>
+                <a href="#convinience">Зручність</a>
+                <a href="#pricing">Вартість</a>
+                <a href="#contacts">Контакти</a>
+            </div>
         </div>
     </div>
 
@@ -44,22 +52,22 @@
 
         <hr>
         <div class="div-conteiner">
-            <div class="demo-column">
+            <div class="div-column">
                 <h2>Демо</h2>
                 <p>
-                    <a href="demo.html">Відкрити Демо</a>
+                    <a class="demo-button" href="demo.html">Відкрити Демо</a>
                 </p>
                 <p>
                     <a href="demo.html">
-                        <img src="img/qr-code.png" style="width: 250px;">
+                        <img src="img/qr-code.png" style="width: 250px; border-style: none;">
                     </a>
                 </p>
             </div>
 
-            <div class="demo-column">
+            <div class="div-column">
                 <div class="demo-conteiner-border">
                     <h2>Крос-платформенне рішення</h2>
-                    <img src="img/cross-platform-00.png">
+                    <img src="img/cross-platform-00.png" style="width: 75%;">
                     <p>
                         Працює як звичайний сайт на будь-яких пристроях, підключених до інтернета. Не потребує встановлення застосунків.
                     </p>
@@ -68,21 +76,44 @@
         </div>
 
         <hr>
-        <div class="div-conteiner"></div>
+        <div class="div-conteiner-row">
+            <div class="div-conteiner div-row">
+                <div class="div-column">
+                    <div class="img-ss">
+                        <img src="img/ss01.png">
+                    </div>
+                </div>
+                <div class="div-column">
+                    <div class="img-ss">
+                        <img src="img/ss02.png">
+                    </div>
+                </div>
+                <div class="div-column">
+                    <div class="img-ss">
+                        <img src="img/ss03.png">
+                    </div>
+                </div>
+                <div class="div-column">
+                    <div class="img-ss">
+                        <img src="img/ss04.png">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <hr>
         <a name="feature"></a>
-        <h1 class="name-center">Можливості системи</h1>
+        <h1 class="div-center">Можливості системи</h1>
         <div class="div-conteiner"></div>
         
         <hr>
         <a name="photo"></a>
-        <h1 class="name-center">Фото</h1>
+        <h1 class="div-center">Фото для вашого закладу</h1>
         <div class="div-conteiner"></div>
 
         <hr>
         <a name="clients"></a>
-        <h1 class="name-center">Клієнти</h1>
+        <h1 class="div-center">Деякі з наших клієнтів</h1>
         <div class="div-conteiner"></div>
 
         <hr>
@@ -101,7 +132,7 @@
         <div class="div-conteiner"></div>
 
         <hr>
-        <div class="div-conteiner">
+        <div class="div-center">
             <p>
                 Copyright © 2020-2022 OneMenu.com.ua
                 <br>
