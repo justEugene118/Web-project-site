@@ -7,7 +7,7 @@ body {
     font-size: 16px;
 }
 
-h1 h2 h3 {
+h1, h2, h3 {
     color: #428bca;
 }
 h1 {
@@ -154,8 +154,20 @@ header {
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 991px) {
+    .div-conteiner:not(.q-div-row) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        }
+}
+
 .div-center {
     text-align: center;
+}
+.div-left {
+    text-align: left;
 }
 
 .div-column {
@@ -166,7 +178,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 a.demo-button {
     background-color: rgba(240,173,78,0.8);
@@ -211,11 +222,18 @@ a:visited {
 
 
 .div-conteiner-row {
+    width: 100%;
     padding: 2em;
     background: #000;
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+@media (max-width: 767px) {
+    .div-conteiner-row {
+        min-height: 25vh;
+        min-width: 30vw;
+    }
 }
 .div-conteiner-row::before {
     content: "";
@@ -248,4 +266,8 @@ a:visited {
     width: 100%;
     height: auto;
     border: 1px solid #666;
+}
+
+li {
+    margin-bottom: 0.75em;
 }
