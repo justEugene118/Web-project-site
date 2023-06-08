@@ -298,3 +298,44 @@ a:visited {
 li {
     margin-bottom: 0.75em;
 }
+.owl-carousel img{
+    height: auto; 
+}
+.long-scroll-img{
+    max-height: 400px;
+    width: 230px;
+    overflow-y: auto;
+    overflow: hidden;
+}
+.long-scroll-img img:hover {
+    object-fit: cover;
+    transform: translateY(calc(-100% + 600px));
+  }
+.long-scroll-img img {
+    transition: 5s ease-in-out;
+  }
+
+.owl-two-footer {
+	position: relative;
+	padding: 1rem 4rem 1rem 1rem;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	opacity: 0.75;
+	-webkit-transition: opacity 350ms ease-out;
+	transition: opacity 350ms ease-out;
+	cursor: pointer;
+	min-height: 91px;
+	/* display: -webkit-box; */
+	/* display: -ms-flexbox; */
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+	border-top: 1px solid #666;
+}
