@@ -325,17 +325,12 @@ li {
 	transition: opacity 350ms ease-out;
 	cursor: pointer;
 	min-height: 91px;
-	/* display: -webkit-box; */
-	/* display: -ms-flexbox; */
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: start;
 	border-top: 1px solid #666;
+}
+.owl-item {
+    border: 1px solid #666;
 }
