@@ -5,6 +5,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -48,25 +49,53 @@ a, a:hover, a:active, a:focus, a:visited {
 
 
 
-.menu {
+.menu-open, .menu-open:hover, .menu-open:active,
+ .menu-open:focus, .menu-open:visited {
     position: fixed;
-    top: 0rem;
-    right: 0rem;
-    width: 2.7rem;
-    height: 2.7rem;
-    border-radius: 4px;
-    z-index: 1000;
-}
-.menu .menu-open .menu-close {
-    width: 2.7rem;
-    height: 2.7rem;
-    position: absolute;
-    padding: 0.3rem 0.05rem;
-    background: rgba(17,17,17,0.9);
     top: 0.3rem;
     right: 0.3rem;
-    z-index: 1001;
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: 0.3rem 0.05rem;
+    border-radius: 4px;
+    z-index: 1;
+    color: #f0ad4e;
+    text-decoration: none;
+    cursor: pointer;
 }
+.menu-content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+.menu-content.active {
+    transform: scale(1);
+}
+.menu-content ul {
+    position: relative;
+    width: auto;
+}
+.menu-content ul li {
+    display: block;
+    padding: 0.4em 0.8em;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
 
 
 
@@ -155,11 +184,9 @@ header {
     align-items: center;
 }
 @media (max-width: 991px) {
-    .div-conteiner:not(.q-div-row) {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    .div-conteiner:not(.div-conteiner-row) {
         flex-direction: column;
+        width: 100%;
         }
 }
 

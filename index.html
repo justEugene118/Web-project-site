@@ -9,26 +9,41 @@
     <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+
     <meta name="description" content="Система онлайн-меню, онлайн-замовлень та доставки для ресторанів, кафе, магазинів, фермерських господарств і т.п.">
 </head>
 <body>
     <div id="menu" class="menu">
-        <a class="menu-open" href="#menu">
+        <div class="menu-open" onclick="menuOpen()">
             <i class="fa fa-2x fa-fw fa-bars"></i>
-        </a>
-        <a class="menu-close" href="javascript:history.go(-1)">
-            <i class="fa fa-2x fa-fw fa-close"></i>
-        </a>
+        </div>
         <div class="menu-content">
-            <div class="div-conteiner-row div-center">
-                <a href="demo.html" target="_blank">Демо</a>
-                <a href="#feature">Можливості системи</a>
-                <a href="#photo">Фото</a>
-                <a href="#clients">Клієнти</a>
-                <a href="#convinience">Зручність</a>
-                <a href="#pricing">Вартість</a>
-                <a href="#contacts">Контакти</a>
+            <div class="menu-open" href="" onclick="menuOpen()">
+                <i class="fa fa-2x fa-fw fa-close"></i>
             </div>
+            <ul class="div-conteiner-row div-center">
+                <li>
+                    <a href="demo.html" onclick="menuOpen()">Демо</a>
+                </li>
+                <li>
+                    <a href="#feature" onclick="menuOpen()">Можливості системи</a>
+                </li>
+                <li>
+                    <a href="#photo" onclick="menuOpen()">Фото</a>
+                </li>
+                <li>
+                    <a href="#clients" onclick="menuOpen()">Клієнти</a>
+                </li>
+                <li>
+                    <a href="#convinience" onclick="menuOpen()">Зручність</a>
+                </li>
+                <li>
+                    <a href="#pricing" onclick="menuOpen()">Вартість</a>
+                </li>
+                <li>
+                    <a href="#contacts" onclick="menuOpen()">Контакти</a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -447,7 +462,7 @@
                 <div class="div-conteiner-row div-left">
                     <h2 class="div-center">Вартість</h2>
                     <p>
-                        ССистема не потребує інвестицій у обладнання або програмне забезпечення. 
+                        Система не потребує інвестицій у обладнання або програмне забезпечення. 
                         Ви просто сплачуєте місячну абонплату, і система працює на наших серверах 
                         з нашою постійною підтримкою.
                     </p>
